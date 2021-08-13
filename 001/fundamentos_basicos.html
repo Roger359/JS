@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos Basicos de JavaScript</title>
+</head>
+
+<body>
+  <h1>Fundamentos Basicos de JavaScript</h1>
+
+  <section style="padding: 20px;">
+    <h2>Declaracion de Variables</h2>
+    <ul>
+      <li>
+        <span>
+          hola = "Hola Mundo con var" =>
+          <strong>
+            Se declara en el Scope Global ("window") del archivo, por ende es una mala practica.
+          </strong>
+        </span>
+        <input style="font-size: 15px;background-color: aquamarine;" id="var" type="button" value="Hola Mundo con var">
+      </li>
+      <li>
+        <span>
+          let hello = "Hello World con let =>
+          <strong>
+            Su valor se puede modificar en el transcurso del flujo del codigo, tipo de variable, value
+          </strong>
+        </span>
+        <input style="font-size: 15px;background-color:chartreuse;" id="let" type="button" value="Hello World con let">
+      </li>
+      <li>
+        <span>
+          const hola = "Hola Mundo con const =>
+          <strong>
+            Su valor es absoluto para valores de tipo primitivo
+          </strong>
+        </span>
+        <input style="font-size: 15px;background-color:coral;" id="const" type="button" value="Hola Mundo con Const">
+      </li>
+    </ul>
+  </section>
+  <section style="padding: 20px;">
+    <h2>Tipos de Datos</h2>
+    <section style="padding: 20px;">
+      <h3>Tipo de Datos: Primitivos</h3>
+      <ul>
+        <li>
+          <span style="color:dodgerblue; font-weight:bold;">
+            STRINGS =>
+            <strong>
+              let holaMundo = "Hola Mundo ejemplo de Strings"
+            </strong>
+          </span>
+          <ul>
+            <li>
+              <span style="color: darkcyan; font-weight:bold;">Propiedades</span>
+              <ul>
+                <li>
+                  length:
+                  <input id="length" type="button" value="length property">
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span style="color: darkcyan; font-weight:bold;">Metodos</span>
+              <ul>
+                <li>
+                  toUpperCase():
+                  <input id="toUpperCase" type="button" value="toUpperCase Method">
+                </li>
+                <li>
+                  toLowerCase():
+                  <input id="toLowerCase" type="button" value="toLowerCase Method">
+                </li>
+                <li>
+                  includes:
+                  <input id="includes" type="button" value="includes Method">
+                </li>
+                <li>
+                  trim():
+                  <input id="trim" type="button" value="trim Method">
+                </li>
+                <li>
+                  split():
+                  <input id="split" type="button" value="split Method">
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span style="color:dodgerblue; font-weight:bold;">
+            NUMBERS =>
+            <strong>
+              let numero = 200
+            </strong>
+          </span>
+          <ul>
+            <li>
+              <span style="color: darkcyan; font-weight:bold;">Propiedades</span>
+            </li>
+            <li>
+              <span style="color: darkcyan; font-weight:bold;">Metodos</span>
+              <ul>
+                <li>
+                  toFixed()
+                  <input id="toFixed" type="button" value="toFixed Method">
+                </li>
+                <li>
+                  parseInt()
+                  <input id="parseInt" type="button" value="parseInt Method">
+                </li>
+                <li>
+                  parseFloat()
+                  <input id="parseFloat" type="button" value="parseFloat Method">
+                </li>
+                <li>
+                  typeof() : devuelve una cadena que indica el tipo del operando sin evaluarlo
+                  <input id="typeof" type="button" value="typeof Method">
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+        <li>UNDEFINED</li>
+        <li>NULL</li>
+        <li>NaN = not a number</li>
+      </ul>
+    </section>
+    <section style="padding: 20px;">
+      <section style="padding: 20px;">
+        <h3>Tipo de Datos: Compuestos</h3>
+        <ul>
+          <li>
+            <span style="color:dodgerblue; font-weight:bold;">
+              Funciones
+            </span>
+            <ul>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Funciones Declaradas : function functionName () { hace algo}
+                </span>
+                <input id="functionDeclarada" type="button" value="Funcion Declarada">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Function Constructor : const functionAnonima = function () { hace algo}
+                </span>
+                <input id="functionConstructor" type="button" value="Function Constructor">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Funciones Expresadas : const functionName = function () { hace algo}
+                </span>
+                <input id="functionExpressions" type="button" value="Function Expressions">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Funciones que Retorna valor : const functionName = function () { hace algo}
+                </span>
+                <input id="functionRetornaValor" type="button" value="Funcion que Retorna Valor">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span style="color:dodgerblue; font-weight:bold;">
+              Arrays
+            </span>
+            <ul>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  New Array :
+                </span>
+                <input id="newArray" type="button" value="New Array">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  fillMethodForArray :
+                </span>
+                <input id="fillMethodForArray" type="button" value="fillMethodForArray">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  PUSH METHOD :
+                </span>
+                <input id="pushMethod" type="button" value="pushMethod">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  POP METHOD :
+                </span>
+                <input id="popMethod" type="button" value="popMethod">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  forEach Method function paradigma :
+                </span>
+                <input id="forEach" type="button" value="forEach Method">
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span style="color:dodgerblue; font-weight:bold;">
+              Object
+            </span>
+            <ul>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Roger Object :
+                </span>
+                <input id="object" type="button" value="Roger Object">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Roger sayMyName Method property:
+                </span>
+                <input id="sayMyName" type="button" value="sayMyName">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Object.keys Method: sirve para listar las llaves con sus ids
+                </span>
+                <input id="objectKeys" type="button" value="Object.Keys Method">
+              </li>
+              <li>
+                <span style="color: darkcyan; font-weight:bold;">
+                  Object.Values Method:
+                </span>
+                <input id="objectValues" type="button" value="Object.Values Method">
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </section>
+  <section style="padding: 20px;">
+    <h2>Tipos de operadores</h2>
+    <section style="padding: 20px;">
+      <section style="padding: 20px;">
+        <h2>Aritmeticos</h2>
+        <ul>
+          <li>+</li>
+          <li>-</li>
+          <li>*</li>
+          <li>/</li>
+          <li>
+            <span>
+              % : En informática, la operación módulo obtiene el resto de la división de un número entre otro (a veces
+              llamado residuo).
+            </span>
+            <input id="modulo" type="button" value="Modulo">
+          </li>
+        </ul>
+        
+      </section>
+      <section style="padding: 20px;">
+        <h2>Relacionales</h2>
+        <ul>
+          <li>> : Mayor que</li>
+          <li>
+            < : Menor que</li> <li>>= : Mayor igual que
+          </li>
+          <li>
+            <= : Menor igual que
+          </li> 
+        </ul> 
+        
+
+      </section>
+      <section style="padding: 20px;">
+        <h2>Incremento decremento</h2>
+          <ul>
+            <li>i += 1</li>
+            <li>i -= 1</li>
+            <li>i *= 1</li>
+            <li>i /= 1</li>
+          </ul>
+      </section>
+      <section style="padding: 20px;">
+        ul>
+          <li>i++ : variable + 1</li>
+          <li>i-- : variable - 1</li>
+          <li>++i : incrementa primero</li>
+          <li>--i : decrementa primero</li>
+        </ul>
+      </section>
+            <h2>Operador Unario</h2>
+            <
+    </section>
+  </section>
+  <section style="padding: 20px;">
+    <h2>Control Structures</h2>
+    <section style="padding: 20px;">
+      <h3>Conditionals</h3>
+      <ul>
+        <li>
+          <span>
+            if - else : if(){}else{}
+          </span>
+          <input id="ifElse" type="button" value="If Else">
+        </li>
+        <li>
+          <span>
+            else if : if(){}else if{}else if{}else{}
+          </span>
+          <input id="elseIf" type="button" value="elseIf">
+        </li>
+        <li>
+          <span>
+            Ternario : Condicion ? verdadero : falsa
+          </span>
+          <input id="ternario" type="button" value="Ternario">
+        </li>
+        <li>
+          <span>
+            Ternario : Condicion ? verdadero : falsa
+          </span>
+          <input id="switch" type="button" value="Switch">
+        </li>
+      </ul>
+    </section>
+    <section style="padding: 20px;">
+      <h3>Loops</h3>
+      <ul>
+        <li>
+          <span>
+            While: 
+          </span>
+          <input id="while" type="button" value="While">
+        </li>
+        <li>
+          <span>
+            do While :
+          </span>
+          <input id="doWhile" type="button" value="doWhile">
+        </li>
+        <li>
+          <span>
+            for: variable de inicioacion ; condicion ; incremento o decremento
+          </span>
+          <input id="for" type="button" value="FOR">
+        </li>
+        <li>
+          <span>
+            for areglos : usar la propiedad length del areglo para recorrerlo
+          </span>
+          <input id="forArray" type="button" value="forArray">
+        </li>
+        <li>
+          <span>
+            For in : FOR IN creado especialmente para un objeto, 
+            for in es una variante de for que nacio apartir de Ecma Script 6
+          </span>
+          <input id="forIn" type="button" value="forIn">
+        </li>
+        <li>
+          <span>
+            FOR OF de un areglo: nos permite recorer todo objeto que sera iterable, inlcuyendo areglos
+          </span>
+          <input id="forOf" type="button" value="forOf">
+        </li>
+        <li>
+          <span>
+            FOR OF de una cadena: nos permite recorer todo objeto que sera iterable, inlcuyendo areglos
+          </span>
+          <input id="forOfCadena" type="button" value="forOfCadena">
+        </li>
+        <li>
+          <span>
+            Break: palabra reservada para interrumpir las iteraciones en un for cuando se cumple
+            una condicion
+          </span>
+          <input id="break" type="button" value="Break">
+        </li>
+        <li>
+          <span>
+            Continue : Palabra reservada para interrumpir una 
+            iteracion y continuar con el recorrido seguido 
+          </span>
+          <input id="continue" type="button" value="continue">
+        </li>
+      </ul>
+    </section>
+  </section>
+  <script>
+    // DECLARACION DE VARIABLES
+    var hola = "Hola Mundo"
+    let hello = "Hello World"
+    const holaMundo = " Hola Mundo con const"
+    let int = 300
+    let float = 17.6
+    let parseToNumber = "5001"
+    const newArray = Array.of("r", "o", "g", "e", "r")
+    const colores = ["rojo", "verde", "azul"]
+    const roger = {
+      name: "Roger",
+      lastname: "Acosta",
+      age: 31,
+      hobies: ["Escuchar Musica", "Jugar Videojuegos", "Estudiar"],
+      single: false,
+      contact: {
+        email: "rogeracosta359@gmail.com",
+        mobile: "3155082379"
+      },
+      saludar: function () {
+        console.log("Hello")
+      },
+      sayMyName: function () {
+        alert(
+          `Hello my name is: ${this.name} ${this.lastname}, i'm ${this.age} years old and you can email to ${this.contact.email}`
+        )
+      }
+
+    }
+    let edad = 20;
+    let numeros = [10,20,30,40,50,60,70,80,90,100]
+    let cadena = "Hola Mundo";
+
+    document.getElementById('var').addEventListener('click', function () {
+      console.log(hola)
+      alert(`window.hola [${window.hola}]`)
+    })
+    document.getElementById('let').addEventListener('click', function () {
+      console.log(hello)
+      alert(`let: [${hello}]`)
+    })
+    document.getElementById('const').addEventListener('click', function () {
+      console.log(holaMundo)
+      alert(`const: [${holaMundo}]`)
+    })
+
+    // Tipo de Datos : PRIMITIVOS
+
+    // STRINGS
+
+    document.getElementById('length').addEventListener('click', function () {
+      console.log(holaMundo.length)
+      alert(`Length de la cadena: [${holaMundo.length}]`)
+    })
+    document.getElementById('toUpperCase').addEventListener('click', function () {
+      console.log(holaMundo.toUpperCase())
+      alert(`toUpperCase Method= [${holaMundo.toUpperCase()}]`)
+    })
+    document.getElementById('toLowerCase').addEventListener('click', function () {
+      console.log(holaMundo.toLowerCase())
+      alert(`toLowerCase Method= [${holaMundo.toLowerCase()}]`)
+    })
+    document.getElementById('includes').addEventListener('click', function () {
+      console.log(holaMundo.includes('Hola'))
+      alert(`includes Method= [${holaMundo.includes('Hola')}]`)
+    })
+    document.getElementById('trim').addEventListener('click', function () {
+      console.log(holaMundo.trim())
+      alert(`trim Method= [${holaMundo.trim()}]`)
+    })
+    document.getElementById('split').addEventListener('click', function () {
+      console.log(holaMundo.split(' '))
+      alert(`split Method= [${holaMundo.split(' ')}]`)
+    })
+
+    // NUMBERS
+
+    document.getElementById('toFixed').addEventListener('click', function () {
+      console.log(float.toFixed(2))
+      alert(`toFixed Method= [${float.toFixed(2)}]`)
+    })
+    document.getElementById('parseInt').addEventListener('click', function () {
+      console.log(parseInt(float))
+      alert(`parseInt Method= [${parseInt(float)}]`)
+    })
+    document.getElementById('parseFloat').addEventListener('click', function () {
+      console.log(parseFloat(parseToNumber))
+      alert(`parseInt Method= [${parseFloat(parseToNumber)}]`)
+    })
+    document.getElementById('typeof').addEventListener('click', function () {
+      console.log(typeof (parseToNumber))
+      alert(`parseInt Method= [${typeof(parseToNumber)}]`)
+    })
+
+    // FUNCTIONS
+
+    // Function Declaration
+
+    function estoEsUnaFuncionDeclarada() {
+      console.log("ES UNA BUENA PRACTICA DECLARAR LA FUNCION ANTES DEL A INVOCACION")
+    }
+
+    // return value function
+
+    function unaFuncionQueRetornaValor() {
+      return "La funcion ha retornano una Cadena de Texto"
+    }
+
+    // Function Expressions
+
+    const functionExpressions = function () {
+      console.log("function expressions called")
+    }
+
+    // Function Constructor
+    const functionConstructor = new Function("a", "b", "return a * b")
+
+    document.getElementById('functionDeclarada').addEventListener('click', function () {
+      console.log("Invocacion de la funcion estoEsUnaFuncionDeclarada()")
+      estoEsUnaFuncionDeclarada();
+    })
+    document.getElementById('functionRetornaValor').addEventListener('click', function () {
+      console.log("Invocacion de la funcion unaFuncionQueRetornaValor()")
+      console.log(unaFuncionQueRetornaValor());
+    })
+    document.getElementById('functionExpressions').addEventListener('click', function () {
+      console.log("Invocacion de la funcion Expresada functionExpressions()")
+      functionExpressions()
+    })
+    document.getElementById('functionConstructor').addEventListener('click', function () {
+      console.log("Invocacion de la function Constructor functionConstructor()")
+      functionConstructor()
+    })
+
+
+    // ARRAYS
+
+    document.getElementById('newArray').addEventListener('click', function () {
+      console.log(colores)
+    })
+
+    const fillMethodForArray = Array(100).fill(5)
+
+    document.getElementById('fillMethodForArray').addEventListener('click', function () {
+      console.log(fillMethodForArray)
+    })
+
+    document.getElementById('pushMethod').addEventListener('click', function () {
+      colores.push("gris")
+      console.log(colores)
+    })
+    document.getElementById('popMethod').addEventListener('click', function () {
+      colores.pop("gris")
+      console.log(colores)
+    })
+    document.getElementById('forEach').addEventListener('click', function () {
+      colores.forEach(function (e, index) {
+        console.log(`<li id=${index}>${e}</li>`)
+      })
+    })
+
+    // OBJECTS 
+
+    document.getElementById('object').addEventListener('click', function () {
+      console.log(roger)
+      alert(JSON.stringify(roger))
+    })
+    document.getElementById('sayMyName').addEventListener('click', function () {
+      roger.sayMyName()
+    })
+    document.getElementById('objectKeys').addEventListener('click', function () {
+      alert(Object.keys(roger))
+    })
+    document.getElementById('objectValues').addEventListener('click', function () {
+      alert(Object.values(roger))
+      console.log(Object.values(roger))
+    })
+
+    // Operadores
+
+    let modulo = 4 % 3;
+
+    document.getElementById('modulo').addEventListener('click', function () {
+      alert(modulo)
+    })
+
+    // Estructura de control 
+
+    // Condicionales
+
+    /*
+    if - else
+    */
+    document.getElementById('ifElse').addEventListener('click', function () {
+      if (edad < 18) {
+        console.log("Eres menor de edad")
+      } else {
+        console.log("Eres mayor de Edad")
+      }
+
+    })
+
+    /* 
+    if - else if - else*/
+    /*
+    Déjame Dormir - 0hrs - 5hrs
+    Buenos dias - 6hrs - 11hrs
+    Buenas tardes - 12hrs - 18hrs
+    Buenas noches - 19hrs - 23hrs
+    */
+
+    // usando operadores relaciones compuestos (añadiendo el =)
+    let hora = 0
+    document.getElementById('elseIf').addEventListener('click', function () {
+      if (hora >= 0 && hora <= 5) {
+        console.log("Déjame Dormir");
+      } else if (hora >= 6 && hora <= 11) {
+        console.log("Buenos dias");
+      } else if (hora >= 12 && hora <= 18) {
+        console.log("Buenas tardes");
+      } else {
+        console.log("Buenas noches");
+      }
+    })
+
+    // Operador ternario, tiene 3 partes
+    /*
+    Condicion ? verdadero : falsa
+    */
+    let edadTernario = 20
+    document.getElementById('ternario').addEventListener('click', function (){
+      let eresMayor = (edadTernario >= 18) ? "Eres Mayor de Edad" : "Eres menor de Edad"
+      console.log(eresMayor )
+    })
+
+    /* Switch - Case : Se utiliza para evaluar diferente valores para una misma variable*/
+    /*
+    Domingo - 0
+    Lunes - 1
+    Martes - 2
+    Miercoles - 3
+    Jueves - 4
+    Viernes - 5
+    Sabado - 6
+    */
+    
+    let dia = 3
+    document.getElementById('switch').addEventListener('click', function () {
+      switch(dia){
+        case 0:
+          console.log("Domingo")
+        break;
+        case 1:
+          console.log("Lunes")
+        break;
+        case 2:
+          console.log("Martes");
+        break;
+        case 3:
+          console.log("Miercoles")
+        break;
+        case 4:
+          console.log("Jueves");
+        break;
+        case 5:
+          console.log("Viernes");
+        break;
+        case 6:
+          console.log("Sabado");
+        break;
+        default:
+          console.log("El dia no existe");
+        break;
+      }
+
+    })
+
+    // ESTRUCTURAS DE CONTROL : LOOPS
+
+    // WHILE
+    let contador = 0;
+    document.getElementById('while').addEventListener('click', function () {
+      while(contador < 10){
+        console.log(contador);
+        contador++
+      }
+    })
+
+    // DO WHILE
+
+    document.getElementById('doWhile').addEventListener('click', function () {
+      do {
+        console.log(`Do While [${contador}]`)
+        contador++;
+      } while (contador < 10)
+    })
+
+    // FOR variable de inicioacion ; condicion ; incremento o decremento
+    document.getElementById('for').addEventListener('click', function () {
+      for(let i = 0; i < 10;i++){
+        console.log("for " + i)
+      }
+    })
+
+    document.getElementById('forArray').addEventListener('click', function (){
+      for(let i = 0; i < numeros.length; i++){
+        console.log(numeros[i])
+      }
+    })
+
+    // FOR IN creado especialmente para un objeto, for in es una variante de for que nacio apartir de Ecma Script 6
+    
+    document.getElementById('forIn').addEventListener('click', function () {
+      for (const propiedad in roger){
+        console.log(`Key: ${propiedad}, Value: ${roger[propiedad]}`)
+      }
+    })
+
+    // FOR OF nos permite recorer todo objeto que sera iterable, inlcuyendo areglos
+
+    document.getElementById('forOf').addEventListener('click', function () {
+      for(const elemento of numeros){
+        console.log(elemento)
+      }
+    })
+
+    document.getElementById('forOfCadena').addEventListener('click', function () {   
+      for(const caracter of cadena){
+        console.log(caracter)
+      }
+    })
+
+    // Break and Continue
+
+    const numeros2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    document.getElementById('break').addEventListener('click', function (){
+      for (let i = 0; i < numeros2.length; i++) {
+        if (i === 3) {
+          break;
+        }
+        console.log(numeros2[i])
+      }
+    })
+    document.getElementById('continue').addEventListener('click', function () {
+      for (let i = 0; i < numeros2.length; i++) {
+        if (i === 5) {
+          continue;
+        }
+        console.log(numeros2[i])
+      }
+    })
+  </script>
+</body>
+
+</html>
